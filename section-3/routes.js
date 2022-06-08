@@ -1,7 +1,6 @@
-const http = require('http');
 const fs = require('fs');
 
-const server = http.createServer((req, res) => {
+const requestHandler = (req, res) => {
   const url = req.url;
   const method = req.method;
   if (url === '/') {
@@ -33,6 +32,17 @@ const server = http.createServer((req, res) => {
   res.write('<body><h1>Hello from my Node.js Server!</h1></body>');
   res.write('</html>');
   res.end();
-});
+};
 
-server.listen(3000);
+// module.exports = requestHandler;
+
+// module.exports = {
+//   handler: requestHandler,
+//   someText: 'Some hard coded text'
+// };
+
+// module.exports.handler = requestHandler;
+// module.exports.someText = 'Some text';
+
+exports.handler = requestHandler;
+exports.someText = 'Some hard coded text';
