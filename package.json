@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/FluxOfPingIntegers/nodejs-the-complete-guide-udemy-course/issues"
   },
-  "homepage": "https://github.com/FluxOfPingIntegers/nodejs-the-complete-guide-udemy-course#readme"
+  "homepage": "https://github.com/FluxOfPingIntegers/nodejs-the-complete-guide-udemy-course#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
