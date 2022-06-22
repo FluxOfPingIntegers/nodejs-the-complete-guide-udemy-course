@@ -6,7 +6,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Optional: Javascript - A Quick Refresher
 - [x] Understanding the Basics
 - [x] Improved Development Workflow and Debugging
-- [ ] Working with Express.js
+- [x] Working with Express.js
 - [ ] Working with Dynamic Content & Adding Templating Engines
 - [ ] The Model View Controller (MVC)
 - [ ] Optional: Enhancing the App
