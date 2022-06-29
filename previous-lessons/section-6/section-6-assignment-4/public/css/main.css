@@ -1,0 +1,9 @@
+.user-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.user-container li {
+  display: inline-block;
+}
