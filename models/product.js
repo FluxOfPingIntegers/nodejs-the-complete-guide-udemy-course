@@ -7,7 +7,11 @@ module.exports = class Product {
   }
 
   save() {
-    const p = path.join(path.dirname(require.main.filename), 'data', 'products.json');
+    const p = path.join(
+      path.dirname(require.main.filename), 
+      'data', 
+      'products.json'
+    );
     fs.readFile(p, (err, fileContent) => {
       let products = [];
       if (!err) {
