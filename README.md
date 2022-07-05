@@ -7,8 +7,8 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Understanding the Basics
 - [x] Improved Development Workflow and Debugging
 - [x] Working with Express.js
-- [ ] Working with Dynamic Content & Adding Templating Engines
-- [ ] The Model View Controller (MVC)
+- [x] Working with Dynamic Content & Adding Templating Engines
+- [x] The Model View Controller (MVC)
 - [ ] Optional: Enhancing the App
 - [ ] Dynamic Routes & Advanced Models
 - [ ] SQL Introduction
