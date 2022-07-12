@@ -3,13 +3,13 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 
 ## Section Progress
 - [x] Introduction
-- [x] Optional: Javascript - A Quick Refresher
+- [ ] Optional: Javascript - A Quick Refresher
 - [x] Understanding the Basics
 - [x] Improved Development Workflow and Debugging
 - [x] Working with Express.js
 - [x] Working with Dynamic Content & Adding Templating Engines
 - [x] The Model View Controller (MVC)
-- [ ] Optional: Enhancing the App
+- [x] Optional: Enhancing the App
 - [ ] Dynamic Routes & Advanced Models
 - [ ] SQL Introduction
 - [ ] Understanding Sequelize
