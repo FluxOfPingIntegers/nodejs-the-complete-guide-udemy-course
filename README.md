@@ -10,7 +10,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Working with Dynamic Content & Adding Templating Engines
 - [x] The Model View Controller (MVC)
 - [x] Optional: Enhancing the App
-- [ ] Dynamic Routes & Advanced Models
+- [x] Dynamic Routes & Advanced Models
 - [ ] SQL Introduction
 - [ ] Understanding Sequelize
 - [ ] Working with NoSQL & Using MongoDB
