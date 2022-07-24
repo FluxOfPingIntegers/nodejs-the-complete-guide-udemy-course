@@ -11,7 +11,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] The Model View Controller (MVC)
 - [x] Optional: Enhancing the App
 - [x] Dynamic Routes & Advanced Models
-- [ ] SQL Introduction
+- [x] SQL Introduction
 - [ ] Understanding Sequelize
 - [ ] Working with NoSQL & Using MongoDB
 - [ ] Working with Mongoose
