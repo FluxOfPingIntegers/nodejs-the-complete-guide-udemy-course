@@ -12,7 +12,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Optional: Enhancing the App
 - [x] Dynamic Routes & Advanced Models
 - [x] SQL Introduction
-- [ ] Understanding Sequelize
+- [x] Understanding Sequelize
 - [ ] Working with NoSQL & Using MongoDB
 - [ ] Working with Mongoose
 - [ ] Sessions & Cookies
