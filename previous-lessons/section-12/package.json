@@ -1,0 +1,34 @@
+{
+  "name": "nodejs-the-complete-guide-udemy-course",
+  "version": "1.0.0",
+  "description": "This is a course written by Maximilian Schwarzmüller that I am completing in order to learn NodeJS.  The full course is available for purchase [here](https://www.udemy.com/course/nodejs-the-complete-guide/). This repo only represents my completed sections of the course work therefore does not include any of the learning modules or files as they are originally presented prior to completion.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FluxOfPingIntegers/nodejs-the-complete-guide-udemy-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FluxOfPingIntegers/nodejs-the-complete-guide-udemy-course/issues"
+  },
+  "homepage": "https://github.com/FluxOfPingIntegers/nodejs-the-complete-guide-udemy-course#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "mongodb": "^4.8.1",
+    "mysql2": "^2.3.3",
+    "pug": "^3.0.2",
+    "sequelize": "^6.21.3"
+  }
+}
