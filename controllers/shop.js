@@ -92,25 +92,7 @@ exports.postOrder = (req, res, next) => {
   let products;
   let fetchedCart;
   req.user
-    .getCart()
-    .then(cart => {
-      fetchedCart = cart;
-      return cart.getProducts();
-    })
-    .then(prods => {
-      products = prods;
-      return req.user.createOrder();
-    })
-    .then(order => {
-      return order.addProducts(
-        products.map(product => {
-          product.orderItem = { quantity: product.cartItem.quantity };
-          return product;
-      }));
-    })
-    .then(product => {
-      return fetchedCart.setProducts(null);
-    })
+    .addOrder()
     .then(clearedCart => {
       res.redirect('./orders');
     })
