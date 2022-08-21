@@ -74,7 +74,10 @@ exports.getAddProduct = (req, res, next) => {
 
   exports.getProducts = (req, res, next) => {
     Product.find()
+      // .select('title price -_id')
+      // .populate('userId', 'name')
       .then(products => {
+        console.log(products);
         res.render('admin/products', {
           prods: products, 
           pageTitle: 'Admin Products', 
