@@ -14,7 +14,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] SQL Introduction
 - [x] Understanding Sequelize
 - [x] Working with NoSQL & Using MongoDB
-- [ ] Working with Mongoose
+- [x] Working with Mongoose
 - [ ] Sessions & Cookies
 - [ ] Adding Authentication
 - [ ] Sending Emails
