@@ -1,4 +1,6 @@
 const path = require('path');
+require('dotenv').config();
+const password = process.env.OLD_PASS;
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -36,7 +38,7 @@ app.use(errorController.get404);
 
 mongoose
   .connect(
-    'mongodb+srv://maximilian:9u4biljMQc4jjqbe@cluster0-ntrwp.mongodb.net/shop?retryWrites=true'
+    `mongodb+srv://RSchleck:${password}@cluster0.dyucjhi.mongodb.net/shop?retryWrites=true&w=majority`
   )
   .then(result => {
     User.findOne().then(user => {
