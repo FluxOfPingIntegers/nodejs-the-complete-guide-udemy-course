@@ -17,7 +17,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Working with Mongoose
 - [x] Sessions & Cookies
 - [x] Adding Authentication
-- [ ] Sending Emails
+- [x] Sending Emails
 - [ ] Advanced Authentication
 - [ ] Understanding Validation
 - [ ] Error Handling
