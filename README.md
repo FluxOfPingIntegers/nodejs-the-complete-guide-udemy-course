@@ -1,5 +1,5 @@
 # NodeJS - The Complete Guide Udemy Course
-This is a course written by Maximilian Schwarzmüller that I am completing in order to learn NodeJS.  The full course is available for purchase [here](https://www.udemy.com/course/nodejs-the-complete-guide/). This repo only represents my completed sections of the course work therefore does not include any of the learning modules or files as they are originally presented prior to completion. 
+This is a course written by Maximilian Schwarzmüller that I am completing in order to learn NodeJS.  The full course is available for purchase [here](https://www.udemy.com/course/nodejs-the-complete-guide/). This repo only represents my completed sections of the course work therefore does not include any of the learning modules or files as they are originally presented prior to completion.
 
 ## Section Progress
 - [x] Introduction
