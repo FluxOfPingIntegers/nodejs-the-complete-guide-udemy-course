@@ -10,7 +10,29 @@ router.get('/login', authController.getLogin);
 
 router.get('/signup', authController.getSignup);
 
-router.post('/login', authController.postLogin);
+router.post('/login',
+  [
+    body('email')
+      .isEmail()
+      .withMessage('Please enter a valid email.')
+      .custom((value, {req}) => {
+        return User.findOne({email: value}).then(userDoc => {
+          if (!userDoc) {
+            return Promise.reject(
+              'Please Enter A Valid Email Or Password.'
+            );
+          }
+        });
+      }), 
+    body(
+      'password',
+      'Please Enter A Valid Email Or Password.'
+    )
+      .isLength({min: 5})
+      .isAlphanumeric()
+  ],
+  authController.postLogin
+);
 
 router.post(
   '/signup', 
