@@ -78,6 +78,5 @@ mongoose
     app.listen(3000);
   })
   .catch(err => {
-    console.log("Failure");
     console.log(err);
   });
