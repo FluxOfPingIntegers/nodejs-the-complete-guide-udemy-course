@@ -20,7 +20,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Sending Emails
 - [x] Advanced Authentication
 - [x] Understanding Validation
-- [ ] Error Handling
+- [x] Error Handling
 - [ ] File Upload & Download
 - [ ] Adding Pagination
 - [ ] Understanding Async Requests
