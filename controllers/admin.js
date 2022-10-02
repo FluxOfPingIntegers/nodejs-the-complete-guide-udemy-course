@@ -34,7 +34,7 @@ exports.postAddProduct = (req, res, next) => {
       errorMessage: 'Attached file is not an image.',
       validationErrors: [],
     });
-  }
+  };
 
   const errors = validationResult(req);
 
@@ -52,7 +52,7 @@ exports.postAddProduct = (req, res, next) => {
       errorMessage: errors.array()[0],
       validationErrors: errors.array(),
     });
-  }
+  };
 
   const imageUrl = image.path;
 
@@ -144,7 +144,7 @@ exports.postEditProduct = (req, res, next) => {
       errorMessage: errors.array()[0].msg,
       validationErrors: errors.array(),
     });
-  }
+  };
 
   Product.findById(prodId)
     .then(product => {
