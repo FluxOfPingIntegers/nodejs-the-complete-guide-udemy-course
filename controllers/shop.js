@@ -199,8 +199,6 @@ exports.getInvoice = (req, res, next) => {
       pdfDoc.text('---');
       pdfDoc.fontSize(20).text('Total Price: $' + totalPrice);
 
-      pdfDoc.text('Hello world!');
-
       pdfDoc.end();
       // fs.readFile(invoicePath, (err, data) => {
       //   if (err) {
