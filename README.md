@@ -21,7 +21,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Advanced Authentication
 - [x] Understanding Validation
 - [x] Error Handling
-- [ ] File Upload & Download
+- [x] File Upload & Download
 - [ ] Adding Pagination
 - [ ] Understanding Async Requests
 - [ ] Adding Payments
