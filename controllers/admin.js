@@ -196,7 +196,7 @@ exports.postDeleteProduct = (req, res, next) => {
   Product.findById(prodId)
     .then(product => {
       if (!product) {
-        return next(new Error('PRoduct not found.'));
+        return next(new Error('Product not found.'));
       }
       fileHelper.deleteFile(product.imageUrl);
       return Product.deleteOne({ _id: prodId, userId: req.user._id })
