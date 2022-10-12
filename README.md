@@ -22,7 +22,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Understanding Validation
 - [x] Error Handling
 - [x] File Upload & Download
-- [ ] Adding Pagination
+- [x] Adding Pagination
 - [ ] Understanding Async Requests
 - [ ] Adding Payments
 - [ ] Working with REST APIs - The Basics
