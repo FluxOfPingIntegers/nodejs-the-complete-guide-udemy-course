@@ -23,7 +23,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Error Handling
 - [x] File Upload & Download
 - [x] Adding Pagination
-- [ ] Understanding Async Requests
+- [x] Understanding Async Requests
 - [ ] Adding Payments
 - [ ] Working with REST APIs - The Basics
 - [ ] Working with REST APIs - The Practical Application
