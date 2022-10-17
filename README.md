@@ -24,7 +24,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] File Upload & Download
 - [x] Adding Pagination
 - [x] Understanding Async Requests
-- [ ] Adding Payments
+- [x] Adding Payments
 - [ ] Working with REST APIs - The Basics
 - [ ] Working with REST APIs - The Practical Application
 - [ ] Understanding Async Await in Nodejs
