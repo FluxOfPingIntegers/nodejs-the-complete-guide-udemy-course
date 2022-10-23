@@ -1,4 +1,8 @@
+const path = require('path');
+require('dotenv').config();
+
 const express = require('express');
+const mongoURL = process.env.MONGODB_URL;
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
@@ -18,5 +22,8 @@ app.use((req, res, next) => {
 
 app.use('/feed', feedRoutes);
 
-mongoose.connect('');
-app.listen(8080);
+mongoose.connect(mongoURI)
+  .then(result => {
+    app.listen(8080);
+  })
+  .catch(err => console.log(err));
