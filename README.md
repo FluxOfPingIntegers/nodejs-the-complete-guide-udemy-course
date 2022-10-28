@@ -3,7 +3,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 
 ## Section Progress
 - [x] Introduction
-- [ ] Optional: Javascript - A Quick Refresher
+- [x] Optional: Javascript - A Quick Refresher
 - [x] Understanding the Basics
 - [x] Improved Development Workflow and Debugging
 - [x] Working with Express.js
