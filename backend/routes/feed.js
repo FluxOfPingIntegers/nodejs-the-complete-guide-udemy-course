@@ -32,7 +32,9 @@ router.put('/post/:postId', [
     .trim()
     .isLength({min: 5 })
 ],
-feedContoller.updatePost
+feedController.updatePost
 );
+
+router.delete('/post/:postId', feedController.deletePost);
 
 module.exports = router;
