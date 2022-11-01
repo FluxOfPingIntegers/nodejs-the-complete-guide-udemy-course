@@ -28,7 +28,8 @@ router.put('/singup', [
       .isEmpty()
   ],
   authController.signup
-  
 );
+
+router.post('/login');
 
 module.exports = router;
