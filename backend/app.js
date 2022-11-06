@@ -2,7 +2,9 @@ const path = require('path');
 require('dotenv').config();
 
 const express = require('express');
-const mongoURL = process.env.MONGODB_URL;
+const mongoUrlPrefix = process.env.MONGODB_URL_PREFIX;
+const oldPass = process.env.OLD_PASS;
+const mongoUrlSuffix = process.env.MONGODB_URL_SUFFIX;
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const multer = require('multer');
@@ -10,7 +12,9 @@ const multer = require('multer');
 const feedRoutes = require('./routes/feed');
 const authRoutes = require('./routes/auth');
 
+const cors = require('cors');
 const app = express();
+app.use(cors());
 
 const fileStorage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -58,7 +62,7 @@ app.use((error, req, res, next) => {
   res.status(status).json({message: message, data: data });
 })
 
-mongoose.connect(mongoURL)
+mongoose.connect(mongoUrlPrefix + oldPass + mongoUrlSuffix)
   .then(result => {
     app.listen(8080);
   })
