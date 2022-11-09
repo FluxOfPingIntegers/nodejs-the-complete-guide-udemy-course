@@ -27,7 +27,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Adding Payments
 - [x] Working with REST APIs - The Basics
 - [x] Working with REST APIs - The Practical Application
-- [ ] Understanding Async Await in Nodejs
+- [x] Understanding Async Await in Nodejs
 - [ ] Understanding Websockets & Socket.io
 - [ ] Working with GraphQL
 - [ ] Deploying our App
