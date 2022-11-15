@@ -28,7 +28,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Working with REST APIs - The Basics
 - [x] Working with REST APIs - The Practical Application
 - [x] Understanding Async Await in Nodejs
-- [ ] Understanding Websockets & Socket.io
+- [x] Understanding Websockets & Socket.io
 - [ ] Working with GraphQL
 - [ ] Deploying our App
 - [ ] Testing Node.js Applications
