@@ -52,10 +52,11 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/graphql', graphqlHttp({
-  schema: graphqlSchema,
-  rootValue: graphqlResolver,
-  graphiql: true
+app.use('/graphql', 
+  graphqlHttp({
+    schema: graphqlSchema,
+    rootValue: graphqlResolver,
+    graphiql: true
 }));
 
 app.use((error, req, res, next) => {
