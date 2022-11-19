@@ -112,7 +112,7 @@ class App extends Component {
     const graphqlQuery = {
       query: `
         mutation {
-          createUser(userInput: {email: "test", name: "Max", password: "tester"}) {
+          createUser(userInput: {email: "${authData.signupForm.email.value}", name: "${authData.signupForm.name.value}", password: "${authData.signupForm.password.value}"}) {
             _id
             email
           }
@@ -124,13 +124,10 @@ class App extends Component {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        email: authData.signupForm.email.value,
-        password: authData.signupForm.password.value,
-        name: authData.signupForm.name.value
-      })
+      body: JSON.stringify(graphqlQuery)
     })
       .then(res => {
+
         if (res.status === 422) {
           throw new Error(
             "Validation failed. Make sure the email address isn't used yet!"
@@ -143,6 +140,14 @@ class App extends Component {
         return res.json();
       })
       .then(resData => {
+        if (resData.errors && resData.errors[0].status === 422) {
+          throw new Error(
+            "Validation failed.  Make sure the email address isn't used yet!"
+          );
+        }
+        if (resData.errors) {
+          throw new Error('User creation failed!');
+        }
         console.log(resData);
         this.setState({ isAuth: false, authLoading: false });
         this.props.history.replace('/');
