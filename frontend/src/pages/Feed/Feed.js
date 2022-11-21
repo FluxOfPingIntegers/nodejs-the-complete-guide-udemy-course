@@ -130,16 +130,21 @@ class Feed extends Component {
     FormData.append('title', postData.title);
     FormData.append('content', postData.content);
     FormData.append('image', postData.image);
-    let url = 'http://localhost:8080/feed/post';
-    let method = 'POST';
-    if (this.state.editPost) {
-      url = 'http://localhost:8080/feed/post/' + this.state.editPost._id;
-      method = 'Put';
-    }
 
-    fetch(url, {
-      method: method, 
-      body: formData,
+    let graphqlQuery = {
+      query: `
+        mutation {
+          createPost(postInput: {title: "${postData.title}", content: "${postData.content}", imageUrl: ""}) {
+            _id
+            title
+          }
+        }
+      `
+    };
+    
+    fetch('http://localhost:8080/graphql', {
+      method: 'POST', 
+      body: JSON.stringify(graphqlQuery),
       headers: {
         Authorization: 'Bearer ' + this.props.token
       }
