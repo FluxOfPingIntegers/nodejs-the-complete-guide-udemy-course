@@ -128,7 +128,7 @@ class Feed extends Component {
     event.preventDefault();
     const graphqlQuery = {
       query: `
-        mutation UpdateUserStatus($userStatus: String) {
+        mutation UpdateUserStatus($userStatus: String!) {
           updateStatus(status: $userStatus) {
             status
           }
@@ -194,10 +194,10 @@ class Feed extends Component {
       body: formData
     }).then(res => res.json())
     .then(fileResData => {
-      const imageUrl = fileResData.filePath;
+      const imageUrl = fileResData.filePath || 'undefined';
       let graphqlQuery = {
         query: `
-          mutation CreateNewPost($title: String, $content: String, $imageUrl: String) {
+          mutation CreateNewPost($title: String!, $content: String!, $imageUrl: String!) {
             createPost(postInput: {title: $title, content: $content, imageUrl: $imageUrl}) {
               _id
               title
@@ -220,7 +220,7 @@ class Feed extends Component {
       if (this.state.editPost) {
         graphqlQuery = {
           query: `
-            mutation UpdateExistingPost($postId: ID, $title: String, $content:String, $imageUrl: String){
+            mutation UpdateExistingPost($postId: ID!, $title: String!, $content:String!, $imageUrl: String!){
               updatePost(id: $postId, postInput: {title: $title, content: $content, imageUrl: $imageUrl}) {
                 _id
                 title
