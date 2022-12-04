@@ -30,7 +30,7 @@ This is a course written by Maximilian Schwarzmüller that I am completing in or
 - [x] Understanding Async Await in Nodejs
 - [x] Understanding Websockets & Socket.io
 - [x] Working with GraphQL
-- [x] Deploying our App
+- [ ] Deploying our App
 - [ ] Testing Node.js Applications
 - [ ] Node.js as a Build Tool & Using npm
 - [ ] Modern JavaScript & NodeJS
