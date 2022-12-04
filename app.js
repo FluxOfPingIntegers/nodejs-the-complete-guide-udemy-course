@@ -1,6 +1,8 @@
 const path = require('path');
 require('dotenv').config();
+const mongo_user = process.env.MONGO_USER;
 const password = process.env.OLD_PASS;
+const mongo_default_database = process.env.MONGO_DEFAULT_DATABASE;
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -15,7 +17,7 @@ const errorController = require('./controllers/error');
 const User = require('./models/user');
 
 const MONGODB_URI =
-`mongodb+srv://RSchleck:${password}@cluster0.dyucjhi.mongodb.net/shop`;
+`mongodb+srv://${mongo_user}:${password}@${mongo_default_database}`;
 
 const app = express();
 const store = new MongoDBStore({
@@ -111,7 +113,7 @@ app.use((error, req, res, next) => {
 mongoose
   .connect(MONGODB_URI)
   .then(result => {
-    app.listen(3000);
+    app.listen(process.env.PORT || 3000);
   })
   .catch(err => {
     console.log(err);
