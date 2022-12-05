@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 const sendgridTransport = require('nodemailer-sendgrid-transport');
 require('dotenv').config();
 const apiKey = process.env.MAILER_KEY;
-const { validationResult } = require('express-validator/check')
+const { validationResult } = require('express-validator')
 
 const User = require('../models/user');
 

@@ -189,7 +189,7 @@ exports.getCheckout = (req, res, next) => {
     });
 };
 
-exports.getCheckoutSucess = (req, res, next) => {
+exports.getCheckoutSuccess = (req, res, next) => {
   req.user
     .populate('cart.items.productId')
     .execPopulate()
